@@ -1,0 +1,27 @@
+
+### Get Torism Data
+GET https://tourism.api.opendatahub.bz.it/v1
+Accept: application/hal+json
+
+### Get Tourism accomodation Data
+@pagenumber =1
+@roominfo = 1-18
+@bokfilter = hgv
+@source = sinfo
+@availabilitychecklanguage = en
+@removenullvalues = false
+
+GET https://tourism.api.opendatahub.bz.it/v1/Accommodation?pagenumber={{pagenumber}}&roominfo={{roominfo}}-18%2C18&bokfilter={{bokfilter}}&source={{source}}&availabilitychecklanguage={{availabilitychecklanguage}}&removenullvalues={{removenullvalues}}
+Accept: application/hal+json
+
+### Get Mobility Data
+GET https://mobility.api.opendatahub.bz.it/v2
+#Accept: application/hal+json
+
+### Destinations not working without company credentials
+GET https://api.aerocrs.com/v5/getDestinations
+
+Accept: application/hal+json
+auth_id: application/hal+json
+auth_password: application/hal+json
+Content-Type: application/json
