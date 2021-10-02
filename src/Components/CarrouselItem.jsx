@@ -1,4 +1,6 @@
 import React from 'react';
+import defaultImage1 from "../images/carousel_1.jpg";
+import defaultImage2 from "../images/carousel_3.jpg";
 const CarrouselItem = ({ 
     imgsrc,
     title,
@@ -22,7 +24,7 @@ const CarrouselItem = ({
     return (
         <>
             <div class={"carousel-item  " + active} >
-                <img class="d-block w-100" src={imgsrc} alt="First slide"/>
+                <img class="d-block w-100" src={id%2 ? defaultImage1 : defaultImage2 } alt="First slide"/>
                 <div class="carousel-caption header highlight ">
                     <div class="title-clamp">
                         <h1> 

@@ -14,7 +14,6 @@ const HomeCarrousel = ({
                 activities.Items.map((val, id) => { 
                     if(val.Detail[language]){
                         return <CarrouselItem 
-                                imgsrc={defaultImage}
                                 title={val.Detail[language].Title? val.Detail[language].Title : ""}
                                 desc = {val.Detail[language].BaseText ? val.Detail[language].BaseText: ""}
                                 id={id}
