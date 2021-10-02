@@ -2,17 +2,18 @@ import React from "react";
 import {NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
+import { useTranslation } from 'react-i18next';
 
 const Footer = ({
   compName
 }) => {
+    const { t, i18n } = useTranslation();
   return (
     <>
       <div class='container-fluid'>
         <div class="card-footer-container">
             <div class="heading text-center">
-                <div class="head1">Let us inspire you</div>
+                <div class="head1">{t('description.whatToDo')} Let us inspire you</div>
                 <p class="bdr"></p>
             </div>
             <div class="card-footer-body">
