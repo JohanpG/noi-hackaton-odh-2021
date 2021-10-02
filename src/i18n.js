@@ -39,7 +39,8 @@ i18n
             translation: {
               description: {
                 whatToDo: 'Cosa fare?',
-                whereToGo: 'Dove andare?'
+                whereToGo: 'Dove andare?',
+                LetUsInspireYou: 'Let us inspire you',
               }
             }
           },
@@ -47,7 +48,8 @@ i18n
         translation: {
             description: {
             whatToDo: 'was geht es zu tun?',
-            whereToGo: 'wo hin?'
+            whereToGo: 'wo hin?',
+            LetUsInspireYou: 'Let us inspire you',
             }
         }
         }

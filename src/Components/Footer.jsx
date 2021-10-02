@@ -13,7 +13,7 @@ const Footer = ({
       <div class='container-fluid'>
         <div class="card-footer-container">
             <div class="heading text-center">
-                <div class="head1">{t('description.whatToDo')} Let us inspire you</div>
+                <div class="head1">{t('description.LetUsInspireYou')}</div>
                 <p class="bdr"></p>
             </div>
             <div class="card-footer-body">
