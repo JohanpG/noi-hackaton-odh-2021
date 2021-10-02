@@ -6,10 +6,6 @@ const HomeCarrousel = ({
     activities,
     language
 }) => {
-    console.log('Entrooooo');
-    console.log(language);
-    console.log(activities);
-
     return (
         <>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
