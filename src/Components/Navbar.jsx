@@ -1,10 +1,18 @@
 import React from "react";
 import {NavLink } from "react-router-dom"
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
 
 
 const Navbar = ({
   compName
 }) => {
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <>
       <div className="container-fluid nav_bg">
@@ -42,8 +50,18 @@ const Navbar = ({
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active"  exact className="nav-link disabled" to="/contact">
-                        Contact
+                      <NavLink activeClassName="menu_active"  onClick={() => changeLanguage('en')} exact className="nav-link" to="/">
+                        EN
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink activeClassName="menu_active"  onClick={() => changeLanguage('it')} exact className="nav-link" to="/">
+                        IT
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink activeClassName="menu_active"  onClick={() => changeLanguage('de')} exact className="nav-link" to="/">
+                        DE
                       </NavLink>
                     </li>
                   </ul>

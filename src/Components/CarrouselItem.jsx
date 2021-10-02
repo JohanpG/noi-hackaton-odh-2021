@@ -17,9 +17,8 @@ const CarrouselItem = ({
         str=str.replace(/<(?:.|\s)*?>/g, "");
         str=str.replace(/\&nbsp;/g, '');
         return str;
-
     } 
-    console.log(id);
+    //console.log(id);
     return (
         <>
             <div class={"carousel-item  " + active} >

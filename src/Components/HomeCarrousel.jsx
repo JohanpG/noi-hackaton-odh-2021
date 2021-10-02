@@ -12,14 +12,15 @@ const HomeCarrousel = ({
             <div class="carousel-inner">
                 {
                 activities.Items.map((val, id) => { 
-                    console.log(id);
-                    return <CarrouselItem 
-                            imgsrc={defaultImage}
-                            title={val.Detail[language].Title}
-                            desc = {val.Detail[language].BaseText}
-                            id={id}
-                            key = {id}
-                        />
+                    if(val.Detail[language]){
+                        return <CarrouselItem 
+                                imgsrc={defaultImage}
+                                title={val.Detail[language].Title? val.Detail[language].Title : ""}
+                                desc = {val.Detail[language].BaseText ? val.Detail[language].BaseText: ""}
+                                id={id}
+                                key = {id}
+                            />
+                        }
                     }
                 )}
             </div>
