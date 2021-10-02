@@ -36,3 +36,148 @@
     transform: rotate(360deg);
   }
 }
+
+
+.title-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.overflow {
+  --max-lines: 3;
+  position: relative;
+  max-height: calc(var(--lh) * var(--max-lines));
+  overflow: hidden;
+  padding-right: 1rem; /* space for ellipsis */
+}
+.overflow::before {
+  position: absolute;
+  content: "...";
+/*   inset-block-end: 0;
+  inset-inline-end: 0; */
+  bottom: 0;
+  right: 0;
+}
+.overflow::after {
+  content: "";
+  position: absolute;
+/*   inset-inline-end: 0; */
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+}
+.card-event{
+  border-top-color: #2252b3db;
+  border-top-width: thick;
+}
+
+.card:hover{
+  border-top-width: thick;
+   transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-search{ 
+  padding: 14px 80px 18px 36px;
+  background: #ebebeb;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-meteo{ 
+  padding: 14px 80px 18px 36px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+
+.card-footer-container {
+  background-color: #407190db;
+  color: white;
+  margin-top: 50px;
+  border: none
+}
+
+.head1 {
+  font-weight: 900;
+  font-size: 30px
+}
+
+.bdr {
+  border-bottom: 1.5px solid #FFB74D;
+  width: 65px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.card-footer {
+  justify-content: space-between;
+  border: none;
+  background: none;
+  border-bottom: 0.5px solid #9E9E9E
+}
+
+.footer-right>i {
+  margin-left: 15px
+}
+
+.fa-hand-holding-usd {
+  color: #FFB74D
+}
+
+.fa-handshake {
+  color: #FFB74D
+}
+
+.card-footer-title {
+  margin-bottom: .75rem;
+  font-weight: 900;
+  font-size: 15px;
+  margin-top: 1.75rem
+}
+
+.learn-more {
+  color: #FFB74D
+}
+
+.fa-angle-right {
+  margin-left: 10px
+}
+
+.fa-3x {
+  color: #FFB74D
+}
+
+.card-footer-content {
+  padding-right: 40px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px
+}
+
+.card-footer-content>p {
+  color: #9E9E9E
+}
+
+.heading {
+  position: relative;
+  top: 75px
+}
+
+.follow-text {
+  color: #9E9E9E
+}
+
+.carousel-item img {
+  max-height: 30vw;
+  min-width: auto;
+}

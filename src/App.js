@@ -9,6 +9,8 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Services from './Components/Services'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer';
+import './App.css';
 
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
 			<Route exact path="/contact" component={Contact} />
 			<Redirect to="/" />
 		</Switch>
+		<Footer />
     </>
   )
 }
